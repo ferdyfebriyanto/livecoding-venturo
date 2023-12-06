@@ -85,7 +85,7 @@
                                 @for ($i = 1; $i <= 12; $i++)
                                     <td style="text-align: right;">
                                         @if(isset($jumlah[$i]) && $jumlah[$i] > 0)
-                                            <b>{{ number_format($jumlah[$i], 0, ',' , '.') }}</b>
+                                            <b>{{ number_format($jumlah[$i], 0, ',' , ',') }}</b>
                                         @else
                                             {{-- Tampilkan string kosong jika tidak ada transaksi pada bulan tertentu --}}
                                             
@@ -95,7 +95,7 @@
 
                                 <!-- Hasil Total keseluruhan -->
                                 <td style="text-align: right;">
-                                    <b>{{ number_format($nilai, 0, ',' , '.') }}</b>
+                                    <b>{{ number_format($nilai, 0, ',' , ',') }}</b>
                                 </td>
                             </tr>
                             
